@@ -1,4 +1,3 @@
-
 function clr() {
 	document.getElementById("show").value = '';
 }
@@ -6,7 +5,7 @@ let flag = 0;
 
 function dis(value) {
 	finalArray = [];
-	if (value == '+' || value == '-' || value == '*' || value == '/'|| value =='.') {
+	if (value == '+' || value == '-' || value == '*' || value == '/' || value == '.') {
 		flag += 1;
 	}
 	if (value >= 0 && value <= 9) {
@@ -15,14 +14,12 @@ function dis(value) {
 	if (flag == 0 || flag == 1) {
 		document.getElementById("show").value += value;
 		console.log(value)
-		
 	}
-
-	}
+}
 
 function output(expressionvalue) {
 	var cArr = resultArray(expressionvalue)
-	
+
 
 	for (i = 0; i <= cArr.length; i++) {
 		cItem = cArr[i];
@@ -36,6 +33,7 @@ function output(expressionvalue) {
 		}
 	}
 	//Handle Divide
+
 	for (i = 0; i <= cArr.length; i++) {
 		cItem = cArr[i];
 		if (cItem == '/') {
@@ -47,6 +45,7 @@ function output(expressionvalue) {
 			i = cArr.length;
 		}
 	}
+
 	//Handle Plus and Minus
 	var tResult = parseFloat(cArr[0]);
 	for (i = 1; i < cArr.length; i++) {
@@ -64,9 +63,6 @@ function solve() {
 	var value = output(exp)
 	document.getElementById('show').value = value;
 }
-
-
-
 finalArray = [];
 
 function resultArray(exp) {
@@ -95,4 +91,3 @@ function arrPush(str) {
 }
 
 
-     

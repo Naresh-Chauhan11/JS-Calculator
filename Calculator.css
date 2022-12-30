@@ -1,4 +1,9 @@
- #table-session{
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#table-session{
 margin-left: 40%;
  }
  h1{
