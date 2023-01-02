@@ -32,7 +32,7 @@ function output(expressionvalue) {
 			i = cArr.length;
 		}
 	}
-	//Handle Divide
+	// 1:Handle Divide
 
 	for (i = 0; i <= cArr.length; i++) {
 		cItem = cArr[i];
@@ -46,7 +46,7 @@ function output(expressionvalue) {
 		}
 	}
 
-	//Handle Plus and Minus
+	// 2:Handle Plus and Minus
 	var tResult = parseFloat(cArr[0]);
 	for (i = 1; i < cArr.length; i++) {
 		if (cArr[i] == '+') {

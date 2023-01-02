@@ -1,33 +1,40 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 2px;
+    padding: 2px;
     box-sizing: border-box;
 }
-#table-session{
-margin-left: 40%;
- }
- h1{
-     text-align:  center;
- }
- .b1{
-     padding: 27px;
-     font-size: 20px;
-      border-radius: 7px;
- }
- .operator{
+
+#table-session {
+    margin-left: 40%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.b1 {
     padding: 27px;
     font-size: 20px;
-     border-radius: 7px;
+    border-radius: 7px;
 }
- #show{
- padding: 20px;
- text-align: right;
- 
- }
- .b1:hover{
-     background-color:#94bbe9;
-     
- }
- .operator:hover{
-    background-color:#94bbe9;
- }
+
+.operator {
+    padding: 27px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+#show {
+    padding: 20px;
+    text-align: right;
+
+}
+
+.b1:hover {
+    background-color: #94bbe9;
+
+}
+
+.operator:hover {
+    background-color: #94bbe9;
+}
